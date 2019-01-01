@@ -35,7 +35,7 @@ def image_transform_net(img_width,img_height,tv_weight=1):
 
 
 
-
+from keras.applications import vgg16.VGG16
 def loss_net(x_in, trux_x_in,width, height,style_image_path,content_weight,style_weight):
     # Append the initial input to the FastNet input to the VGG inputs
     x = concatenate([x_in, trux_x_in], axis=0)
